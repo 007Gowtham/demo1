@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add User</title>
+    <link rel="stylesheet" href="/static/site.css">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fb; margin: 0; padding: 0; }
+        .container { max-width: 400px; margin: 60px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 32px 28px; }
+        h2 { text-align: center; color: #2d3a4b; margin-bottom: 28px; }
+        label { display: block; margin-bottom: 6px; color: #444; font-weight: 500; }
+        input[type="text"], input[type="email"] { width: 100%; padding: 10px; margin-bottom: 18px; border: 1px solid #d1d5db; border-radius: 5px; font-size: 1rem; }
+        input[type="submit"] { width: 100%; background: #2563eb; color: #fff; border: none; padding: 12px; border-radius: 5px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        input[type="submit"]:hover { background: #1e40af; }
+        .link { display: block; text-align: center; margin-top: 18px; color: #2563eb; text-decoration: none; font-weight: 500; }
+        .link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add User</h2>
+        <form method="POST" action="{{ url_for('submit') }}">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Add User">
+        </form>
+        <a class="link" href="{{ url_for('view') }}">View All Users</a>
+    </div>
+</body>
+</html>

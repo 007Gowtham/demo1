@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="/static/site.css">
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fb; margin: 0; padding: 0; }
+        .container { max-width: 500px; margin: 80px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); padding: 40px 32px; text-align: center; }
+        h1 { color: #2563eb; margin-bottom: 24px; }
+        p { color: #444; font-size: 1.1rem; margin-bottom: 32px; }
+        a { color: #2563eb; text-decoration: none; font-weight: 500; font-size: 1.1rem; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About</h1>
+        <p>This is a simple Flask + MySQL demo app with HTML frontend.</p>
+        <a href="{{ url_for('home') }}">Home</a>
+    </div>
+</body>
+</html>
