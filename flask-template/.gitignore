@@ -60,10 +60,7 @@ coverage.xml
 # VS Code
 .vscode/
 
-# Docker
-*.log
-docker-compose*.yml
-Dockerfile
+
 
 # System files
 .DS_Store
